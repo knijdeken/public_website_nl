@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Resellers on Commence CRM software - Rotterdam</title>
+    <link>http://www.memocom.nl/reseller/</link>
+    <description>Recent content in Resellers on Commence CRM software - Rotterdam</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>nl</language>
+    <atom:link href="http://www.memocom.nl/reseller/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>be.wan</title>
+      <link>http://www.memocom.nl/reseller/bewan/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.memocom.nl/reseller/bewan/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Simmis</title>
+      <link>http://www.memocom.nl/reseller/simmis/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.memocom.nl/reseller/simmis/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>VCC Aruba</title>
+      <link>http://www.memocom.nl/reseller/vcc_aruba/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.memocom.nl/reseller/vcc_aruba/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Vovin</title>
+      <link>http://www.memocom.nl/reseller/vovin/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.memocom.nl/reseller/vovin/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>News on Commence CRM software - Rotterdam</title>
+    <link>http://www.memocom.nl/news/</link>
+    <description>Recent content in News on Commence CRM software - Rotterdam</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>nl</language>
+    <lastBuildDate>Fri, 13 Mar 2015 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://www.memocom.nl/news/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>MemoEdit released</title>
+      <link>http://www.memocom.nl/news/memoedit-released/</link>
+      <pubDate>Fri, 13 Mar 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.memocom.nl/news/memoedit-released/</guid>
+      <description>&lt;p&gt;Commence Europe heeft een nieuwe versie van de scripteditor MemoEdit. In deze nieuwe versie zijn nog meer voorgebakken scripts toegevoegd (VB.Net-voorbeeldscripts voor de Report Writer). Er is ook een nieuw navigatievenster dat u alle functies en subroutines toont. De editor is multidocument; u kunt meerdere scripts tegelijk openen.&lt;/p&gt;
+
+&lt;p&gt;&lt;br/&gt;
+&lt;img src=&#34;http://www.memocom.nl/images/MemoEdit.png&#34; alt=&#34;MemoEdit screenshot&#34; /&gt;
+&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>MemoGraph released</title>
+      <link>http://www.memocom.nl/news/memograph-released/</link>
+      <pubDate>Fri, 13 Mar 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.memocom.nl/news/memograph-released/</guid>
+      <description>&lt;p&gt;Commence Europa heeft een nieuwe control (MemoGraph) gereleased die het mogelijk maakt om grafieken aan uw invoerschermen toe te voegen. Momenteel worden staaf, lijn, spline, gecombineerd, taart, ring, trechter en piramide ondersteund. Met behulp van de Commence Designer kunt u de control op een formulier zetten en met een script de control met de gegevens invullen. De control is gratis voor alle klanten met een onderhoudscontract. Onze consultants kunnen u helpen met de implementatie wanneer dat nodig is.&lt;br/&gt;
+&lt;img src=&#34;http://www.memocom.nl/images/Spline.png&#34; alt=&#34;Spline screenshot&#34; /&gt;
+&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Training Report Viewer</title>
+      <link>http://www.memocom.nl/news/training-report-viewer/</link>
+      <pubDate>Fri, 13 Mar 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.memocom.nl/news/training-report-viewer/</guid>
+      <description>&lt;p&gt;Commence Europe heeft een introductietraining voor de Commence Report Viewer uitgebracht. De training maakt gebruik van onze innovatieve e-learningomgeving .&lt;/p&gt;
+
+&lt;p&gt;&lt;br/&gt;
+&lt;img src=&#34;http://www.memocom.nl/images/TrainingReportWriterDutch.png&#34; alt=&#34;TrainingReportWriterDutch screenshot&#34; /&gt;
+&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,120 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html xml:lang="nl" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>TechNews</title>
+    <meta content="text/html; charset=windows-1252" http-equiv="Content-Type" />
+  </head>
+  <body style="TEXT-ALIGN: justify; MARGIN-TOP: 0px; FONT-FAMILY: Verdana; COLOR: #000000; MARGIN-LEFT: 0px; FONT-SIZE: 10pt">
+    <p>
+      <font style="FONT-FAMILY: Verdana; COLOR: #526880; FONT-SIZE: 8pt">&nbsp;If you can not read this newsletter, click <a href="http://www.memocom.nl/openwebpage.asp?nr=(%X-WGDoortelnummer%)&w=http://www.memocom.nl/system/upload/129/TechNews32.html">here</a>.</font>
+    </p>
+    <table style="TEXT-ALIGN: justify; COLOR: #000000; FONT-SIZE: 10pt">
+      <tbody>
+        <tr>
+          <td>
+            <img src="http://www.memocom.nl/system/upload/34/footer.png" /> </td>
+        </tr>
+      </tbody>
+    </table>
+    <table style="FONT-FAMILY: Verdana; MARGIN-LEFT: 25px" width="649">
+      <tbody>
+        <tr>
+          <td>
+            <h1 style="TEXT-ALIGN: justify; MARGIN-TOP: 30px; MARGIN-BOTTOM: 0px; COLOR: #014568; MARGIN-LEFT: 12px; FONT-SIZE: 30pt">
+              <img src="http://www.memocom.nl/system/upload/35/arrow-left.png" width="23" />&nbsp;Tech<strong>News</strong></h1>
+            <h2 style="TEXT-ALIGN: justify; MARGIN-TOP: 5px; LETTER-SPACING: 0.5pt; COLOR: #014568; MARGIN-LEFT: 50px; FONT-SIZE: 12pt">number 32 - February&nbsp;2011</h2>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table style="WIDTH: 715px; FONT-FAMILY: Verdana; MARGIN-LEFT: 25px">
+      <tbody>
+        <tr>
+          <td>
+            <h3 style="TEXT-ALIGN: justify; MARGIN-TOP: 10px; MARGIN-BOTTOM: 0px; COLOR: #014568; MARGIN-LEFT: 50px; FONT-SIZE: 11pt">MemoDLL</h3>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p style="TEXT-ALIGN: justify; COLOR: #000000; MARGIN-LEFT: 50px; FONT-SIZE: 10pt">
+              What is MemoDLL?<br /><br />MemoDLL is a core module of the CRM application that you build with Commence. Almost all screens will use functions collected in MemoDLL. But also standalone scripts in for example VBscript, PHP or Ruby can use functions from MemoDLL. All the MemoTools use functions of MemoDLL too.</p>
+            <p style="TEXT-ALIGN: justify; COLOR: #000000; MARGIN-LEFT: 50px; FONT-SIZE: 10pt">What can you do with MemoDLL?<br /><br />MemoDLL contains a huge collection of functions. Some examples:<br /><br />&bull;&nbsp;Functions for merging Word and e-mail templates;<br />&bull;&nbsp;A function to send e-mail (this is a complete e-mail solution);<br />&bull;&nbsp;Functions to translate texts;<br />&bull;&nbsp;Functions to check what data changed in a form;<br />&bull;&nbsp;Functions like zipcode check, kvk check, BSN check, account number etc. etc.<br /><br />Functions that have not been covered (until today) are the log functions. In today&rsquo;s world it becomes more and more important to keep track of what software is actually doing. Important decisions made by software must be logged for audit purposes or for easy debugging. </p>
+            <p style="TEXT-ALIGN: justify; COLOR: #000000; MARGIN-LEFT: 50px; FONT-SIZE: 10pt">MemoDLL already uses log functions from the very first release but in the 4.0 release we have made the logfunctions available to the outside world too. Here is an overview of the log functions:<br /><br />Function to log a message in the active.log of MemoDLL:<br /><br /><font face="Courier New">vCcode = oMemoTools.LogMsg( pMsg )<br /><br /></font>Function with trace level support to log a message in the active.log of MemoDLL, the message will only be logged in the active.log of MemoDLL when the tracelevel set for MemoDLL (stored in the registry) is equal or higher to the tracelevel set in the call (tracelevel is between 0 and 99 )<br /><br /><font face="Courier New">vCcode = oMemoTools.LogMsg2( pMsg, pTraceLevel )<br /><br /></font>Function to log a message in a file, but with the same layout as the active.log of MemoDLL (the file is always stored in the same directory as the active.log; pFilename must just be a filename, so not a path).<br /><br /><font face="Courier New">vCcode = oMemoTools.LogMsg3( pFilename, pMsg )<br /><br /></font>Please note: the first two functions have an active.log as a circular file, i.e. at some point, the first part of the file is truncated. The last function will make a logfile that keeps on growing. <br /></p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <h3 style="TEXT-ALIGN: justify; MARGIN-TOP: 10px; MARGIN-BOTTOM: 0px; COLOR: #014568; MARGIN-LEFT: 50px; FONT-SIZE: 11pt">E-mail templates</h3>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <font size="2">
+              <p style="TEXT-ALIGN: justify; COLOR: #000000; MARGIN-LEFT: 50px; FONT-SIZE: 10pt">
+                In the previous TechNews we presented a new way to create e-mail templates using a header and a footer template, both are included in the final template. The result is that all templates become easier to maintain. When you use this method you probably need some additional tools that we describe here. <br /><br />We have three new scripts available:<br /><br />ExportEmailTemplates.vbs, this script exports all templates to a directory.<br />ImportEmailTemplates.vbs, this script imports all templates from a directory.<br /><br />The e-mail templates are stored as text files. To be able to test them we have a third script: <br /><br />TestEmailTemplates.vbs, this script creates real HTML files that you can view in your browser. </p>
+              <p style="TEXT-ALIGN: justify; COLOR: #000000; MARGIN-LEFT: 50px; FONT-SIZE: 10pt">So when you are going to move your e-mail templates to the new structure, here are the steps to take:<br /><br />&bull;&nbsp;Create a header template;<br />&bull;&nbsp;Create a footer template;<br />&bull;&nbsp;Create a new e-mail template that uses header and footer;<br />&bull;&nbsp;Tailter all three until you are satisfied;<br />&bull;&nbsp;Use the ExportEmailTemplates.vbs script to export all the templates;<br />&bull;&nbsp;Using a text editor (for example Notepad++) change all the other templates;<br />&bull;&nbsp;Use the TestEmailTemplates.vbs script to generate .html files;<br />&bull;&nbsp;Check all generated html files in a browser;<br />&bull;&nbsp;Use the ImportEmailTemplates.vbs script to import all the e-mail templates;<br />&bull;&nbsp;Test all e-mail templates using Commence.<br /></p>
+            </font>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <h3 style="TEXT-ALIGN: justify; MARGIN-TOP: 10px; MARGIN-BOTTOM: 0px; COLOR: #014568; MARGIN-LEFT: 50px; FONT-SIZE: 11pt">Large text fields</h3>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p style="TEXT-ALIGN: justify; COLOR: #000000; MARGIN-LEFT: 50px; FONT-SIZE: 10pt">
+              Commence supports many field types and within some field types Commence has also a number of options. When you use the text field type you have the option of a small (80 chars or less) or large (more than 80 chars). When you select longer, Commence will create an extra file in the database to store this large text field. So for every large text field, Commence will open an extra file. <br /><br />At this moment the number of open files inside Commence is set to 80, so there is limit to the amount of large text fields that you can set in a category. When you have problems in an agent on the category or you can&rsquo;t read or store data in a field, please check the number of large text fields in the&nbsp; category. </p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p style="TEXT-ALIGN: justify; COLOR: #000000; MARGIN-LEFT: 50px; FONT-SIZE: 10pt"></p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <h3 style="TEXT-ALIGN: justify; MARGIN-TOP: 10px; MARGIN-BOTTOM: 0px; COLOR: #014568; MARGIN-LEFT: 50px; FONT-SIZE: 11pt">Script examples</h3>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p style="TEXT-ALIGN: justify; COLOR: #000000; MARGIN-LEFT: 50px; FONT-SIZE: 10pt">
+              We have a new directory one the ftpsite with example scripts (technews\scripts). All scripts are in VBS and have the extension .txt. When you like to use a script, download it, change it the way you like and rename the extension to .vbs . Finally play and test it. We hope this will allow you to use MemoDLL functions more and more and thus reduce the amount of script you need in Commence itself. </p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <br />
+            <br />
+            <p style="TEXT-ALIGN: justify; COLOR: #000000; MARGIN-LEFT: 50px; FONT-SIZE: 10pt">More information and all files of this TechNews can be found on&nbsp;the <a href="http://www.memocomsupport.nl/technews" target="_blank">TechNews site</a> and on <a href="http://www.memocomsupport.com/" target="_blank">Memocom Online Support</a>.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p></p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <h3 style="TEXT-ALIGN: justify; MARGIN-TOP: 10px; MARGIN-BOTTOM: 0px; COLOR: #014568; MARGIN-LEFT: 50px; FONT-SIZE: 11pt"></h3>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p style="TEXT-ALIGN: justify; COLOR: #000000; MARGIN-LEFT: 50px; FONT-SIZE: 10pt" align="justify">
+              <br />
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td style="TEXT-ALIGN: center; LETTER-SPACING: 0pt; MARGIN-LEFT: 50px">
+            <p style="TEXT-ALIGN: center; LETTER-SPACING: 0pt">
+              <font color="#526880" size="1" face="Verdana">Copyright &copy; 2011 Memocom B.V.<br />You can check&nbsp;<a href="http://www.memocom.nl/openwebpage.aspx?nr=(%X-WGDoortelnummer%)&w=http://www.memocom.nl" target="_blank">www.memocom.nl</a> for more information about Commence and Memocom.<br>In case you want to subscribe/unsubscribe to TechNews, you can click <a href="mailto:info@memocom.nl?subject=MemoNieuws&body=I%20would%20like%20to%20subscribe/unsubscribe%20to%20TechNews">here</a>.</font>
+            </p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

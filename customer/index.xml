@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Customers on Commence CRM software - Rotterdam</title>
+    <link>http://www.memocom.nl/customer/</link>
+    <description>Recent content in Customers on Commence CRM software - Rotterdam</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>nl</language>
+    <atom:link href="http://www.memocom.nl/customer/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Tintelingen</title>
+      <link>http://www.memocom.nl/customer/tintelingen/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.memocom.nl/customer/tintelingen/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Bartimeus</title>
+      <link>http://www.memocom.nl/customer/bartimeus/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.memocom.nl/customer/bartimeus/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>SNS Bank</title>
+      <link>http://www.memocom.nl/customer/sns_bank/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.memocom.nl/customer/sns_bank/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ministerie van Economische Zaken</title>
+      <link>http://www.memocom.nl/customer/ministerie_economische_zaken/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.memocom.nl/customer/ministerie_economische_zaken/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
